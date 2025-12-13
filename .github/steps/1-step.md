@@ -60,7 +60,8 @@ For example, the community has streamlined Git into nearly all development workf
 To start practicing Git, let's first open a pre-configured development environment and explore the sample project.
 
 > [!IMPORTANT]
-> This exercise teaches Git usage, not Git installation. We recommend the official [Git site](https://git-scm.com) for installation guides.
+> This exercise teaches Git usage, not Git installation.
+> Since there are many computer configurations, we recommend the official [Git site](https://git-scm.com) for installation guides.
 
 1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
@@ -69,7 +70,7 @@ To start practicing Git, let's first open a pre-configured development environme
 1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
 
    - ✅ Your copy: `/{{full_repo_name}}`
-   - ❌ Original: `/skills/customize-your-github-copilot-experience`
+   - ❌ Original: `/skills-dev/getting-started-with-git`
 
 1. Wait a moment for Visual Studio Code to load in your browser.
 
@@ -78,9 +79,9 @@ To start practicing Git, let's first open a pre-configured development environme
    > ❗️ **Warning**: Don't make any changes!
    > We have not added version control yet! 😱
 
-   <img width="400px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-1.png"/><br/>
+   <img width="400px" src="https://github.com/user-attachments/assets/81b5e04c-763c-4902-a593-108c33a11792"/><br/>
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-2.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/a20529f3-8e42-464b-8d84-b0880dd14383"/>
 
 ### ⌨️ Activity 2: Git in the CLI
 
@@ -88,7 +89,7 @@ Let's start with using Git in the command line interface (CLI). This is the sour
 
 1. If the integrated terminal is not already available, open it using `Ctrl+Shift+P` then searching for and selecting `View: Toggle Terminal`
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-3.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/4bbf918a-f87c-4875-b7fd-61d8b16a70e1"/>
 
 1. Show the currently installed version of Git, to verify it is installed.
 
@@ -96,7 +97,7 @@ Let's start with using Git in the command line interface (CLI). This is the sour
    git --version
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-4.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/0e09991b-829f-4028-b951-87bc5fa47bfc"/>
 
 1. Show the Git help documentation.
 
@@ -104,11 +105,11 @@ Let's start with using Git in the command line interface (CLI). This is the sour
    git --help
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-5.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/c447adf3-9cc1-4106-9a49-f2bf705d396c"/>
 
 ### ⌨️ Activity 3: Set your Git identity
 
-Before we can start versioning with Git, let's tell Git about our identity so it can associate you as the author of any changes.
+Before we can start versioning our game, let's provide Git our identity so it can associate us as the author for any changes.
 
 1. Set your display name. Don't forget to replace `First` and `Last`!
 
@@ -128,7 +129,7 @@ Before we can start versioning with Git, let's tell Git about our identity so it
    git config --global --list
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-6.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/62688039-3601-4a23-8f61-408210faff0a"/>
 
 > [!TIP]
 > You can also change your username and email per project, if you have multiple accounts. On an **existing** project, use `--local` instead of `--global`.

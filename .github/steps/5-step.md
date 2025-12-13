@@ -130,19 +130,13 @@ gitGraph LR:
 
 Let's start a branch and practice committing changes to it.
 
-1. If necessary, return to the project folder.
-
-   ```bash
-   cd /workspaces/stack-overflown
-   ```
-
 1. Before we start, let's see what our history looks like. Notice that it is perfectly linear (no branches yet).
 
    ```bash
    git log --all --graph --oneline
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-1.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/2055347b-28a5-40cd-9fcc-b57b2b44b857"/>
 
 1. Create a new branch and switch to it.
 
@@ -157,7 +151,7 @@ Let's start a branch and practice committing changes to it.
    git branch --list
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-2.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/6eb8ba89-73b1-4398-b567-3833fa086d80"/>
 
 1. Open `main.js` so we can fix the high score feature.
 
@@ -185,7 +179,7 @@ Let's start a branch and practice committing changes to it.
    git commit -m "Add loading of stored high score"
    ```
 
-1. On `line 316`, insert code to track of the highest score and then commit it.
+1. On `line 316` inside the `updateScore` function, insert code to track of the highest score and then commit it.
 
    ```js
    // Update high score if current score exceeds it
@@ -207,7 +201,7 @@ Let's start a branch and practice committing changes to it.
    git log --all --graph --oneline
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-3.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/cf86fbf8-1efd-4ad8-a916-da129c1b4b4c"/>
 
 1. Switch back to the `main` branch.
 
@@ -217,13 +211,13 @@ Let's start a branch and practice committing changes to it.
 
 1. Merge the new feature.
 
+   > 🪧 **Note:** For learning, we use the "not fast forward" option so the branch stays visible in the history. It will make our next history more interesting to explore.
+
    ```bash
    git merge --no-ff fix-incomplete-high-score -m "Fix high score tracker"
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-4.png"/>
-
-   For learning, we use the "not fast forward" option so the branch stays visible in the history. It will make our next history more interesting to explore.
+   <img width="500px" src="https://github.com/user-attachments/assets/6ee45d40-e25c-4c03-907c-063d57273a7e"/>
 
 1. Let's look at the history graph again. Notice the parallel branch that is now merged.
 
@@ -231,7 +225,7 @@ Let's start a branch and practice committing changes to it.
    git log --all --graph --oneline
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-5.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/44ac3dd2-9d2d-4551-9cb5-c03f05fabdd1"/>
 
 1. Remove the pointer/label to the feature branch, since it is now merged and no longer needed.
 
@@ -243,22 +237,21 @@ Let's start a branch and practice committing changes to it.
 
 ### ⌨️ Activity 2: Commit to a branch (using VS Code)
 
-1. In the left navigation, open the **Source Control panel**. To the right of the project name, click on the branch name `main`. A menu will appear with options.
+1. In the left navigation, open the **Source Control** tab. Make sure the **Graph** panel is visible. Let's watch it update as we apply changes.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-6.png"/><br/>
+1. To the right of the project name, click on the branch name `main`. A menu will appear with options.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-7.png"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/2c9fdd37-e63c-4d26-82b6-d9ca7c5356e1"/><br/>
 
-1. Make sure the **Graph** panel is visible. Let's watch it update as we apply changes.
+1. Select the **Create new branch...** option and use the below name.
 
-1. Select the **Create a new branch...** option and provide the below name.
+   <img width="350px" src="https://github.com/user-attachments/assets/d3f26f30-3f8f-4cbb-8fb2-5754838b0fdf"/>
 
    ```txt
-   git branch add-level-counter
-   git checkout add-level-counter
+   add-level-counter
    ```
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-8.png"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/e3ce472c-650c-4674-a778-ad2e310ef0c6"/>
 
 1. Open `main.html`. On `line 21`, insert a new element for showing the current level, then commit the change.
 
@@ -267,9 +260,10 @@ Let's start a branch and practice committing changes to it.
    <div class="score" id="level">1</div>
    ```
 
+   Commit message
+
    ```bash
-   git add src/main.html
-   git commit -m "Add element to display current level"
+   Add element to display current level
    ```
 
 1. Open `main.js` so we can add the level counter.
@@ -319,27 +313,27 @@ Let's start a branch and practice committing changes to it.
 
 1. Notice the **Graph** panel shows the history, previous branch, and new commits.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-9.png"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/66b8c419-3935-46e8-9905-b6ed4f5de75c"/>
 
 1. To prepare for merging, click the branch name again and select the `main` branch.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-10.png"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/207c97e2-c0ad-4d87-ac76-f4ad7684b9fc"/><br/>
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-11.png"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/1c2e4ce9-3c10-4fb0-9eba-e789bd1de525"/>
 
 1. Click the three dot menu (`...`), then `Branch`, and select `Merge...`. Notice it performed a normal **Fast Forward** style merge.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-12.png"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/fdc61118-afc8-4e80-bac1-03876b883970"/><br/>
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-13.png"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/aa35bdc4-9a90-4c62-a43c-9de9838d15a6"/><br/>
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-14.png"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/7492e9f2-ceb4-4c10-a5da-8a20d0b59441"/>
 
 1. Click the three dot menu (`...`), then `Branch`, and select `Delete Branch...`.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-12.png"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/af638c23-a655-4ff1-8188-994ca71ee115"/><br/>
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/1d8e00d54f432da127ab2d6020572babec1e9a98/.github/steps/images/5-15.png"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/b75f4349-c3da-4228-95c9-9025c33f01c2"/>
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

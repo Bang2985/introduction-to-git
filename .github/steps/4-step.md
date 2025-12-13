@@ -29,9 +29,11 @@ The `git diff` command shows differences between development states.
 
 ### ⌨️ Activity 1: View differences (using the CLI)
 
-1. Open `src/main.html` and navigate to around `line 20`.
+Let's make some changes to the game then use the CLI to show the differences.
 
-1. Replace the `info-section` area about scoring with the below example.
+1. Open `src/main.html`.
+
+1. At `line 20`, replace the `info-section` area about scoring with the below example.
 
    ```txt
    <div class="info-section">
@@ -54,7 +56,7 @@ The `git diff` command shows differences between development states.
    git diff src/main.html
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-1.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/ce56cfc4-63e0-4827-abac-8ae645238ab8"/>
 
 1. Promote the changes into the staging area.
 
@@ -74,7 +76,7 @@ The `git diff` command shows differences between development states.
    git diff --staged src/main.html
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-2.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/3c3be154-67f4-4b76-a5fd-230e03f90ddc"/>
 
 1. Commit the changes with the following message.
 
@@ -82,13 +84,13 @@ The `git diff` command shows differences between development states.
    git commit -m "Add element for showing high score"
    ```
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-3.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/8381b943-ca22-4b22-97b5-4520e174fc4c"/>
 
 ### ⌨️ Activity 2: View differences (using VS Code)
 
-1. Open `src/patterns.html` and navigate to around `line 4`.
+1. Open `src/patterns.html`.
 
-1. Replace the `Null Pointer` area with the below example to change the pattern.
+1. At `line 4`, replace the `Null Pointer` area with the below example to change the pattern.
 
    ```txt
    {
@@ -100,36 +102,36 @@ The `git diff` command shows differences between development states.
       [0, 0, 1, 0, 0],
       [0, 0, 1, 0, 0],
     ],
-   }
+   },
    ```
 
-1. In the left file explorer, notice file name changed color and now has an `M` indicating it is modified.
+1. In the **File Explorer**, notice the file name `patterns.js` changed color and now has an `M` indicating it is modified.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-4.png"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/6e06e800-ca72-4fc9-b383-add801e61c06"/>
 
 1. Open the **Source Control** tab. In the **Changes** list, double-click the `patterns.js` file to open the Diff (comparison) view.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-5.png"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/5ea6e771-d89a-4240-af72-c25c057da545"/><br/>
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-6.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/4c410689-2a53-462f-9200-79d21bddbf2c"/>
 
    > 💡 **Tip**: You can modify the content in the comparison view for live feedback!
 
 1. Promote the the file to the **staging** area. ⚠️ Don't commit yet!
 
-   Notice the comparison view stopped showing changes since the current file matches the **Staging** area.
+   Notice the comparison view stopped showing changes since the current file matches the staging area.
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-7.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/b1274ece-2b03-42d2-88e8-9f3aaaa8f2c5"/>
 
 1. In the **Staged Changes** list, double-click the `patterns.js` file to open the Diff (comparison) view.
 
    Notice that you can't make changes now. The staging area is locked in preparation for committing.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-8.png"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/f313e4b3-1e27-4ea0-9789-132759f1d4fc"/><br/>
 
-   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-9.png"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/de1448eb-d0dd-4ec5-89a2-74fb4aa1cf5f"/>
 
-1. Add the following commit message and press the **Commit** button.
+1. Commit the change with the following message.
 
    ```txt
    Make null pointer pattern easier to complete
