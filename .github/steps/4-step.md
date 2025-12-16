@@ -11,6 +11,13 @@ Git uses symbols and coloring to show file changes:
 - `+` in green indicates lines that were added
 - `-` in red indicates lines that were removed
 
+Example:
+
+```diff
++ This is a line that was added
+- This is a line that was removed
+```
+
 > [!TIP]
 > You can change Git's default comparison colors with the below commands.
 >
@@ -113,7 +120,7 @@ Let's make some more changes to the game then use the VS Code to show the differ
 
 1. Open the **Source Control** tab. In the **Changes** list, double-click the `patterns.js` file to open the Diff (comparison) view.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/d0865a7f-4b8b-492e-831b-c793699fd6bc"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/4dce9e42-caca-4c6e-a6fe-8d83d58cd06d"/><br/>
 
    <img width="500px" src="https://github.com/user-attachments/assets/4c410689-2a53-462f-9200-79d21bddbf2c"/>
 
@@ -129,7 +136,7 @@ Let's make some more changes to the game then use the VS Code to show the differ
 
    Notice that you can't make changes now. The staging area is locked in preparation for committing.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/04a5eab5-4d6f-4b39-be42-5f09ecd29dbd"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/da306727-49f1-4f73-9f38-3a0e5d406cef"/><br/>
 
    <img width="500px" src="https://github.com/user-attachments/assets/de1448eb-d0dd-4ec5-89a2-74fb4aa1cf5f"/>
 
@@ -138,6 +145,8 @@ Let's make some more changes to the game then use the VS Code to show the differ
    ```txt
    Make null pointer pattern easier to complete
    ```
+
+1. With your new commits added to the repository, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

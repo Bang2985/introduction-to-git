@@ -4,6 +4,10 @@ You've been working on a project and realized organizing backups has become diff
 
 After some quick searching, you learned about [Git](https://git-scm.com/). Supposedly, it makes keeping track of changes and collaborating with others easy. It removes the confusion of older methods like file naming conventions, share drives, and emailed copies of files.
 
+> [!IMPORTANT]
+> This exercise teaches Git usage on a machine with it already installed.
+> If you want to install it on your own computer, we recommend the official [Git site](https://git-scm.com) for installation guides, since there are many computer configurations.
+
 ### 📖 Theory: What is Version Control?
 
 Version control systems solve common problems developers face when managing code changes over time. Issues like:
@@ -64,18 +68,16 @@ For example, the community has streamlined Git into nearly all development workf
 
 To start practicing Git, let's first open a pre-configured development environment and explore the sample project.
 
-> [!IMPORTANT]
-> This exercise teaches Git usage, not Git installation.
-> Since there are many computer configurations, we recommend the official [Git site](https://git-scm.com) for installation guides.
-
 1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
 
+   > 🪧 **Note**: Typically a [GitHub Codespace](https://github.com/features/codespaces) automatically includes the repository code and all required settings. This is a modified experience so you can practice from scratch.
+
 1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
 
    - ✅ Your copy: `/{{full_repo_name}}`
-   - ❌ Original: `/skills-dev/getting-started-with-git`
+   - ❌ Original: `/skills-dev/introduction-to-git`
 
 1. Wait a moment for Visual Studio Code to load in your browser.
 
@@ -87,6 +89,9 @@ To start practicing Git, let's first open a pre-configured development environme
    <img width="400px" src="https://github.com/user-attachments/assets/81b5e04c-763c-4902-a593-108c33a11792"/><br/>
 
    <img width="500px" src="https://github.com/user-attachments/assets/a20529f3-8e42-464b-8d84-b0880dd14383"/>
+
+> [!TIP]
+> Feel free to leave the game open and give it more trial-runs as we make changes! 🧑‍🚀
 
 ### ⌨️ Activity 2: Git in the CLI
 
@@ -140,8 +145,10 @@ Before we can start versioning our game, let's provide Git our identity so it ca
 
    <img width="500px" src="https://github.com/user-attachments/assets/62688039-3601-4a23-8f61-408210faff0a"/>
 
+1. With your author details configured, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
+
 > [!TIP]
-> You can also change your username and email per project, if you have multiple accounts. On an **existing** project, use `--local` instead of `--global`.
+> You can also change your username and email per project, if you have multiple accounts. On an **existing** project repository, use `--local` instead of `--global`.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

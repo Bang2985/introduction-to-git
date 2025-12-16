@@ -72,12 +72,13 @@ Here are a few of the common commands and options you will often use.
    <img width="500px" src="https://github.com/user-attachments/assets/4d0f6660-e689-47a2-874e-c3d71b32975b"/><br/>
 
    🪧 Notice the `README.md` file was removed.
+   
    <img width="350px" src="https://github.com/user-attachments/assets/ea61c817-0ac2-430e-b501-d43ea903dae3"/>
 
-1. Return to the newest commit. Notice the `README.md` file has returned. 🧐
+1. Return to the latest commit on `main`. Notice the `README.md` file has returned. 🧐
 
    ```bash
-   git checkout -
+   git checkout main
    ```
 
    <img width="350px" src="https://github.com/user-attachments/assets/5814f14b-fbf5-4090-90f6-32f815f8b773"/><br/>
@@ -86,13 +87,21 @@ Here are a few of the common commands and options you will often use.
 
 ### ⌨️ Activity 2: Explore the history (using VS Code)
 
-1. In the left navigation, open the **Source Control** tab and expand the **Graph** panel. Notice the timeline list of your recent commits.
+1. In the left navigation, open the **Source Control** tab.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/ce8879ea-7db6-48a4-b686-4a5e147066d4"/><br/>
+1. Right-click on the **Changes** header and enable the **Graph** option.
+
+   <img width="350px" src="https://github.com/user-attachments/assets/c5bfb32d-198a-4baa-9ae5-156ee283256c"/>
+
+1. Inspect the **Graph** panel. Notice the timeline list of your recent commits.
+
+   <img width="350px" src="https://github.com/user-attachments/assets/860f780f-98ca-4c0e-bb0f-e7d65fb84a67"/><br/>
 
 1. Click the commit names to expand a list of the files modified by that commit.
 
    <img width="350px" src="https://github.com/user-attachments/assets/1b3d4e1e-c329-4f4a-895d-2276d19b17ca"/>
+
+1. With your exploration of the Git history finished, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
