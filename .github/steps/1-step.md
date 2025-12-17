@@ -81,12 +81,12 @@ To start practicing Git, let's first open a pre-configured development environme
 
 1. Wait a moment for Visual Studio Code to load in your browser.
 
-1. In the left navigation tabs, select **File Explorer** to show the files. Right-click on `src/main.html` and select **Show Preview** to see our sample game in action.
+1. In the left navigation tabs, select **File Explorer** to show the files. Right-click on `src/index.html` and select **Show Preview** to see our sample game in action.
 
    > ❗️ **Warning**: Don't make any changes!
    > We have not added version control yet! 😱
 
-   <img width="400px" src="https://github.com/user-attachments/assets/81b5e04c-763c-4902-a593-108c33a11792"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/c5f60f24-27fb-4670-ab0a-c00aa723672c"/><br/>
 
    <img width="500px" src="https://github.com/user-attachments/assets/a20529f3-8e42-464b-8d84-b0880dd14383"/>
 
